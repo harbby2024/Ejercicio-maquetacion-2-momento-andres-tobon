@@ -1,0 +1,31 @@
+
+.swal-popup {
+  position: fixed;
+  margin-top: 200px;
+}
+.swal-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #68d106;
+}
+
+.swal-input {
+  border-radius: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.swal-popup {
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.swal-confirm-button {
+  background-color: #3498db !important;
+  color: white !important;
+  border: none !important;
+  padding: 10px 20px !important;
+  font-weight: bold;
+  border-radius: 5px !important;
+}
