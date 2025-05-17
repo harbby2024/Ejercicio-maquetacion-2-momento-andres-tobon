@@ -1,43 +1,50 @@
-import { useEffect } from "react";
-import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
+import { Link } from 'react-router-dom';
 import './BusquedaClientes.css';
-import LogoMercadoLibre from "/mercado-libre-logo-1.png"
 
-function BusquedaCliente() {
-    
-  useEffect(() => {
-    const mostrarAlerta = async () => {
-      const { value: email } = await Swal.fire({
-        title: "Ingresa el correo del cliente",
-        input: "email",
-        inputLabel: "Correo electrónico",
-        inputPlaceholder: "ejemplo@correo.com",
-        customClass: {
-          title: "swal-title",
-          input: "swal-input",
-          popup: "swal-popup",
-          confirmButton: "swal-confirm-button"
-        }
-      });
 
-      if (email) {
-        Swal.fire(`Correo ingresado: ${email}`);
-      }
-    };
+function InputCliente() {
+  const navigate = useNavigate();
 
-    mostrarAlerta();
-  }, []);
+  const handleClick = () => {
+    navigate('/Detalle-Cliente');
+  };
 
-  return null; // No renderiza nada visible
+  return (
+    <div className="container">
+        {/* SECCION DE INPUT CLIENTE */}
+      <section className="inputCliente">
+            <div className="cuadro-input">
+                <div className="titulocontainer">Ingresa el correo del cliente</div>
+                <input
+                     type="text"
+                     className="input"
+                       placeholder="Ingresa el correo del cliente"
+                 />
+                 {/* Boton que redirije a detalle del cliente buscado */}
+                <button type="button" onClick={handleClick} className="btn">
+                 Buscar cliente
+                </button>
+
+                {/* Link que redirije a input buscar producto */}
+                <Link to="/buscar-Producto" className="link-estilo">
+                    Buscar producto
+                </Link>
+            </div>
+      </section>
+
+
+      {/* SECCION LOGO Y FRASE */}
+      <section className="logo-frase">
+        
+        {/* Logo de Mercado libre*/}
+        <img src="src/assets/imagenes/Logo.png"  alt="" className="logo"/>
+
+        {/* Frase principal página gestion cliente*/}
+        <h1 className="frase-principal">Busca, encuentra y gestiona sin complicaciones.</h1>
+      </section>
+    </div>
+  );
 }
 
-function logoBienvenida(){
-    return(
-        <section className="logoBienvenida">
-                <h1>Buscar Cliente</h1>
-                <img src={LogoMercadoLibre}  alt="" srcset="" />
-        </section>
-    )
-}
-
-export default BusquedaCliente;
+export default InputCliente;

@@ -22,7 +22,7 @@ const Enrutador = createBrowserRouter([
 
   /* Enrutador página busqueda de productos*/
    {
-    path: "/Busqueda-Producto",
+    path: "/buscar-Producto",
     element: <BusquedaProducto />,
   },
 
