@@ -1,0 +1,9 @@
+.props-card-cliente{
+display: flex;
+align-content: flex-start;
+flex-wrap: wrap;
+}
+
+.barra-home{
+background-color:#fcdd2c ;
+}

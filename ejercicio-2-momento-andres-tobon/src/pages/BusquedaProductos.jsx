@@ -7,7 +7,7 @@ function InputProducto() {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate('/Detalle-Producto');
+    navigate('/listado-producto');
   };
 
   return (
@@ -15,33 +15,33 @@ function InputProducto() {
         {/* SECCION DE INPUT CLIENTE */}
       <section className="inputCliente">
             <div className="cuadro-input">
-                <div className="titulocontainer">Ingresa el correo del cliente</div>
+                <div className="titulocontainer">Ingresa el ID del producto</div>
                 <input
                      type="text"
                      className="input"
-                       placeholder="Ingresa el correo del cliente"
+                       placeholder="Ingresa el ID del producto"
                  />
                  {/* Boton que redirije a detalle del cliente buscado */}
                 <button type="button" onClick={handleClick} className="btn">
-                 Buscar cliente
+                 Buscar producto
                 </button>
 
-                {/* Link que redirije a input buscar producto */}
-                <Link to="/buscar-Producto" className="link-estilo">
-                    Buscar producto
+                {/* Link que redirije a input gestion de cliente */}
+                <Link to="/busqueda-cliente" className="link-estilo">
+                    Buscar cliente
                 </Link>
             </div>
       </section>
 
 
-      {/* SECCION LOGO Y FRASE */}
+        {/* SECCION LOGO Y FRASE */}
       <section className="logo-frase">
         
         {/* Logo de Mercado libre*/}
         <img src="src/assets/imagenes/Logo.png"  alt="" className="logo"/>
 
         {/* Frase principal página gestion cliente*/}
-        <h1 className="frase-principal">Busca, encuentra y gestiona sin complicaciones.</h1>
+        <h1 className="frase-principal">Gestión ágil, productos al alcance.</h1>
       </section>
     </div>
   );

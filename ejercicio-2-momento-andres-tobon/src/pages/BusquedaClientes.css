@@ -31,6 +31,7 @@
   background-color: rgb(255, 255, 255);
   border-radius: 20px;
   border: 1px solid #171576;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /*Texto cuadro input*/
@@ -50,6 +51,7 @@
   border-radius: 20px;
   padding: 10px;
   margin-bottom: 30px;
+  
 }
 
 .btn{
@@ -91,10 +93,11 @@
 }
 
 .logo{
+  text-align: center;
   display: flex;
   width: 450px;
   padding-bottom: 5%;
-  margin-left: 25%;
+  margin-left: 200%;
 }
 
 .frase-principal{

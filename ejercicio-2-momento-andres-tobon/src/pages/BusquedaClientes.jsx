@@ -7,7 +7,7 @@ function InputCliente() {
   const navigate = useNavigate();
 
   const handleClick = () => {
-    navigate('/Detalle-Cliente');
+    navigate('/listado-clientes');
   };
 
   return (

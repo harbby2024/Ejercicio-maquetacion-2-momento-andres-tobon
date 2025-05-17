@@ -4,6 +4,8 @@ import BusquedaCliente from "../pages/BusquedaClientes";
 import BusquedaProducto from "../pages/BusquedaProductos";
 import DetalleCliente from "../pages/DetalleCliente";
 import DetalleProducto from "../pages/DetalleProducto";
+import ListadoProducto from "../pages/ListadoProductos";
+import ListadoClientes from "../pages/ListadoClientes";
 import ListadoClienteProducto from "../pages/ListadoClientesyProductos.JSX";
  
 
@@ -13,17 +15,17 @@ const Enrutador = createBrowserRouter([
     path: "/",
     element: <Home />,
   },
-
+  /*ERUTADORES CLIENTE*/
   /* Enrutador página busqueda de clientes*/
   {
     path: "/busqueda-cliente",
     element: <BusquedaCliente />,
   },
 
-  /* Enrutador página busqueda de productos*/
-   {
-    path: "/buscar-Producto",
-    element: <BusquedaProducto />,
+  /* Enrutador página detalle de clientes*/
+  {
+    path: "/listado-clientes",
+    element: <ListadoClientes />,
   },
 
   /* Enrutador página detalle de clientes*/
@@ -32,18 +34,30 @@ const Enrutador = createBrowserRouter([
     element: <DetalleCliente />,
   },
 
-  /* Enrutador página detalle de producto*/
-  {
-    path: "/Detalle-Producto",
-    element: <DetalleProducto />,
-  },
-
    /* Enrutador página lista de clientes y productos*/
   {
     path: "/lista-clientes-y-productos",
     element: <ListadoClienteProducto />,
   },
-  
+
+  /*ERUTADORES PRODUCTO*/
+  /* Enrutador página busqueda de productos*/
+   {
+    path: "/buscar-Producto",
+    element: <BusquedaProducto />,
+  },
+
+  /* Enrutador página Listado de productos*/
+   {
+    path: "/listado-producto",
+    element: <ListadoProducto />,
+  },
+
+  /* Enrutador página detalle de producto*/
+  {
+    path: "/Detalle-Producto",
+    element: <DetalleProducto />,
+  },
 ]);
 
 export default Enrutador;
