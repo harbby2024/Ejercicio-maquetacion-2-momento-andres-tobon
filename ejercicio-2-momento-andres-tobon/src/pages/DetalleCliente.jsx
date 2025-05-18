@@ -22,7 +22,7 @@ function DetalleCliente() {
                     className="image-cliente"
                 />
             </div>
-            <div className="contenedor">
+            <div className="contenedor-info">
                 <div className="info-cliente">
                     <h1>Andrés Felipe Martínez Torres</h1>
                     <h2>5141202</h2>
@@ -38,19 +38,19 @@ function DetalleCliente() {
                             src="src/assets/imagenes/productos/Productos 01-05.jpg"
                             productoNombre="Televisor Samsung Smart 48 Oled S90d"
                             precio="$ 2.549.900"
-                            fechaCompra="01 enero 2023"
+                            fechaCompra="01 enero 2025"
                         />
                         <HistorialCliente
                             src="src\assets\imagenes\productos\Productos 01-04.jpg"
-                            productoNombre="Televisor Samsung Smart 48 Oled S90d"
-                            precio="$ 2.549.900"
-                            fechaCompra="01 enero 2023"
+                            productoNombre="Asus computador portatil 4528 en promo "
+                            precio="$ 3.549.900"
+                            fechaCompra="23 marzo 2023"
                         />
                         <HistorialCliente
-                            src="src\assets\imagenes\productos\Productos 01-05.jpg"
-                            productoNombre="Televisor Samsung Smart 48 Oled S90d"
-                            precio="$ 2.549.900"
-                            fechaCompra="01 enero 2023"
+                            src="src\assets\imagenes\productos\Productos 01-02.jpg"
+                            productoNombre="Silla en cuerina, perfecto para sentarse"
+                            precio="$  549.900"
+                            fechaCompra="05 febrero 2024"
                         />
                 </div>
 

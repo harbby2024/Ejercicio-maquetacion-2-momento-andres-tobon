@@ -1,22 +1,22 @@
 .contenedor-general{
+align-items: center;
+text-align: center;
+margin: 0;
+padding: 30px;
+background-color: rgb(255, 255, 255);
 display: flex;
-background-color: #0e67af;
-min-width: 50%;
-
 }
-.contenedor{
+.contenedor-info{
 padding-top: 70px;
-padding-bottom:  50%;
 padding: 100px;
  height: 100%;
+ background-color: #fcdd2c;
 
 }
 .info-cliente{
 border-radius: 15px;
-border:1px solid #171576;
-padding: 40px;
+padding: 10px;
 margin: 10px;
-background-color: rgb(255, 255, 255);
 margin-left: 15px;
 }
 .img-seccion{
@@ -45,6 +45,8 @@ background-color:#128cf0;
 .boton-listado-clientes:hover{
 background-color:#0e67af;
 }
+
+
 
 
 
