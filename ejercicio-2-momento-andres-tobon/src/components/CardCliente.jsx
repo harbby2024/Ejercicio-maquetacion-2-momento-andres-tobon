@@ -27,12 +27,15 @@ function CardCliente(props) {
       </section>
 
       <section className="props-historial">
-        <HistorialCliente 
-          src="src/assets/imagenes/productos/Productos 01-03.jpg" 
-          productoNombre="Casco Moto Bell Lithium Shear Gris Blanco" 
-          precio="$ 622.700" 
-          fechaCompra="23 abril 2020"
+        <div className="producto-destacado">
+        <h3>Producto destacado</h3>
+            <HistorialCliente 
+             src="src/assets/imagenes/productos/Productos 01-03.jpg" 
+             productoNombre="Casco Moto Bell Lithium Shear Gris Blanco" 
+             precio="$ 622.700" 
+              fechaCompra="23 abril 2020"
         />
+        </div>
         <HistorialCliente 
           src="src/assets/imagenes/productos/Productos 01-05.jpg" 
           productoNombre="Televisor Samsung Smart 48 Oled S90d" 

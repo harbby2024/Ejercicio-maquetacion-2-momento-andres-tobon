@@ -81,3 +81,14 @@ background-color: #128cf0;
 .btn-2:hover{
 background-color:#0e67af; 
 }
+
+.producto-destacado>h3{
+  text-align: end;
+padding-right: 30px;
+  color:#fcdd2c;
+  margin-top: 10px;
+  margin: 5px;
+  background-color:black;
+
+
+}
