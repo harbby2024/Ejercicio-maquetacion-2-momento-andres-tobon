@@ -27,7 +27,7 @@ function InputProducto() {
                 </button>
 
                 {/* Link que redirije a input gestion de cliente */}
-                <Link to="/busqueda-cliente" className="link-estilo">
+                <Link to="/" className="link-estilo">
                     Buscar cliente
                 </Link>
             </div>

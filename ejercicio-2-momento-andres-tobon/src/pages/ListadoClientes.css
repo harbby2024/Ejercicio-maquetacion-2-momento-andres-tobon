@@ -1,9 +1,29 @@
 .props-card-cliente{
-display: flex;
-align-content: flex-start;
-flex-wrap: wrap;
+display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+  gap: 20px; /* Espacio entre tarjetas */
+  padding: 20px;
 }
 
 .barra-home{
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
 background-color:#fcdd2c ;
+padding: 15px;
+}
+.logo-menu{
+position: static;
+justify-content: space-between;
+width: 200px;
+margin-right: 70%;
+}
+
+.boton-inicio{
+background-color: #128cf0;
+}
+
+.boton-inicio:hover{
+background-color: #0e67af;
 }

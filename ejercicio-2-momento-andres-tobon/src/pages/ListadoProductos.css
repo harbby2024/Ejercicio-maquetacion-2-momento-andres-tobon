@@ -1,0 +1,10 @@
+.props-card-productos{
+ display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  grid-template-rows: repeat(2, 1fr);    /* 2 filas */
+  gap: 20px;
+  padding: 40px;
+  height: 100vh; /* Toda la altura de la pantalla */
+  box-sizing: border-box;
+ 
+}

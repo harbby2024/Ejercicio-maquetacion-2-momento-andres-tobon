@@ -4,17 +4,17 @@ import HistorialCliente from "../components/HistorialCliente";
 import "./ListadoClientes.css";
 
 function ListadoClientes() {
-  const navigate = useNavigate(); // Hook para navegar
+  const navigate = useNavigate(); 
 
   const irAlInicio = () => {
-    navigate("/"); // Redirige a la raíz "/"
+    navigate("/"); 
   };
 
   return (
     <section className="card-clientes">
       <div className="props-card-cliente">
         <CardCliente  
-                    src="src\assets\imagenes\clientes\Cliente 01_Mesa de trabajo 1.png" 
+                    src="ssrc\assets\imagenes\clientes\Cliente-01_Mesa-de-trabajo-1.png" 
                     nombre="Juan Sebastián Rodríguez Pérez"
                     id="5141202"
                     fechaNacimiento="02 mayo 1965"
@@ -45,8 +45,8 @@ function ListadoClientes() {
                     ciudad="Medellín - Antioquia"
                     />
                 <CardCliente  
-                    src="src\assets\imagenes\clientes\Cliente 01-03.png" 
-                    nombre="Andrés Felipe Martínez Torres"
+                    src="src\assets\imagenes\clientes\Cliente 01-04.png" 
+                    nombre="Sebastian Montoya Angarita"
                     id="5141202"
                     fechaNacimiento="02 mayo 1965"
                     correo="correocliente@gmail.com"
@@ -55,7 +55,17 @@ function ListadoClientes() {
                     ciudad="Medellín - Antioquia"
                     />
                 <CardCliente  
-                    src="src\assets\imagenes\clientes\Cliente 01-03.png" 
+                    src="src/assets/imagenes/clientes/Cliente 01-05.png" 
+                    nombre="Nanci Rubiela Elalla     "
+                    id="5141202"
+                    fechaNacimiento="02 mayo 1965"
+                    correo="correocliente@gmail.com"
+                    celular="3512874566"
+                    direccion="cr 62 # 76 a 28 sur"
+                    ciudad="Medellín - Antioquia"
+                    />
+                <CardCliente  
+                    src="src\assets\imagenes\clientes\Cliente 01-06.png" 
                     nombre="Andrés Felipe Martínez Torres"
                     id="5141202"
                     fechaNacimiento="02 mayo 1965"
@@ -69,8 +79,8 @@ function ListadoClientes() {
       
       {/* Botón de navegación */}
       <div className="barra-home">
-        <img src="src\assets\imagenes\Logo.png" alt="" srcset="" />
-        <button onClick={irAlInicio}>
+        <img src="src\assets\imagenes\Logo.png" alt="" className="logo-menu" />
+        <button onClick={irAlInicio} className="boton-inicio">
           Ir al Inicio
         </button>
       </div>

@@ -1,6 +1,8 @@
 import "./HistorialCliente.css"
 
 function HistorialCliente (props){
+
+    
     return(
         <section className="historial-productos-cliente">
 

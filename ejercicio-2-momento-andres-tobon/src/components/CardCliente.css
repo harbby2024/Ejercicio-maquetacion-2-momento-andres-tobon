@@ -5,44 +5,79 @@
 }
 
 /*DISEÑO CARD CLIENTE*/
-.card-cliente{
-    background-color: rgb(230, 230, 230);
-    height: 450px;
-    padding: 20px;
-    margin: 30px;
-    border-radius: 05%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.pagina-clientes {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow: hidden;
 }
 
-.card-cliente:hover{
-  border: 1px solid#171576;
+/* SECCIÓN DE LAS CARDS (GRID DE 2x3) */
+.grid-clientes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  grid-template-rows: repeat(2, auto);   /* 2 filas */
+  gap: 20px;
+  padding: 20px 40px;
+  flex: 1; /* Toma el espacio disponible antes del footer */
+  box-sizing: border-box;
 }
 
-.card-info-cliente{
+/* TARJETA DE CLIENTE */
+.card-cliente {
+  background-color: rgb(230, 230, 230);
+  height: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: border 0.2s ease;
+}
+
+.card-cliente:hover {
+  border: 1px solid #171576;
+}
+
+/* INFO INTERNA DE LA CARD */
+.card-info-cliente {
   display: flex;
   background-color: #fcdd2c;
   border-radius: 20px;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border: 1px solid#171576;
+  border: 1px solid #171576;
 }
 
-.card-info-cliente:hover{
-  border: 0px solid#171576;
+.card-info-cliente:hover {
+  border: none;
 }
 
-.ima-cliente { 
-  width: 150px;
+/* IMAGEN DEL CLIENTE */
+.ima-cliente {
+  width: 120px;
   border-radius: 50%;
-  border: 1px solid#171576;
-  margin-right: 40px;
+  border: 1px solid #171576;
+  
 }
 .nombre-cliente{
-  font-size: 20px;
+  font-size: 15px;
 }
 .info-cliente {
   font-size: 9px;
 }
 
+.btn-2{
+border-radius: 30px;
+padding: 5px;
+margin: 10px;
+margin-left: 20%;
+padding-left: 20%;
+padding-right: 20%;
+background-color: #128cf0;
+
+}
+
+.btn-2:hover{
+background-color:#0e67af; 
+}
