@@ -14,7 +14,7 @@ function ListadoClientes() {
     <section className="card-clientes">
       <div className="props-card-cliente">
         <CardCliente  
-                    src="ssrc\assets\imagenes\clientes\Cliente-01_Mesa-de-trabajo-1.png" 
+                    src="src\assets\imagenes\clientes\Cliente-01_Mesa-de-trabajo-1.png" 
                     nombre="Juan Sebastián Rodríguez Pérez"
                     id="5141202"
                     fechaNacimiento="02 mayo 1965"

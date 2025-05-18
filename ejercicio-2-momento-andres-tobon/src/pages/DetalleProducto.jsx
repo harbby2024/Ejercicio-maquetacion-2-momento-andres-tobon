@@ -1,11 +1,11 @@
 import "./DetalleProducto.css";
-import { useNavigate } from "react-router-dom"; // ✅ Importar navegación
+import { useNavigate } from "react-router-dom"; 
 
 function DetalleProducto() {
     const navigate = useNavigate();
 
     const irAListadoProductos = () => {
-        navigate("detalle-Producto"); 
+        navigate("/listado-producto"); 
     };
 
     return (
